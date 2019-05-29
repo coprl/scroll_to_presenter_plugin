@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    scroll_to_presenters_plugin (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 2.0)
+  rake (~> 10.0)
+  scroll_to_presenters_plugin!
+
+BUNDLED WITH
+   2.0.1
