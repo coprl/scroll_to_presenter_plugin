@@ -22,7 +22,9 @@ module Voom
           def action_data_scroll_to(action, parent_id, *)
             options = action.options.to_h.merge(
               __parent_id__: parent_id,
-              element: action.element
+              element: action.element,
+              offset: action.offset,
+              smooth: action.smooth
             )
 
             # Type, URL, Options, Params (passed into javascript event/action classes)
