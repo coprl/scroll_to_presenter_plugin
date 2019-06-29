@@ -5,6 +5,12 @@ module Voom
     module Plugins
       module ScrollTo
 
+        class Settings
+          extend Dry::Configurable
+          setting :offset, 0
+          setting :smooth, true
+        end
+
         module DSLEventActions
           def scroll_to(element, **attributes, &block)
             self << ScrollTo::Action.new(element: element, parent: self, **attributes, &block)
