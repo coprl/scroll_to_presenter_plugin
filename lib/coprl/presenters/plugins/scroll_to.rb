@@ -1,6 +1,6 @@
 require_relative 'scroll_to/action'
 
-module Voom
+module Coprl
   module Presenters
     module Plugins
       module ScrollTo
@@ -18,9 +18,13 @@ module Voom
         end
 
         module WebClientComponents
-          def render_header_scroll_to(_pom, render:)
-            view_dir = File.join(__dir__, 'scroll_to')
-            render.call :erb, :scroll_to_header, views: view_dir
+
+          def view_dir_script(pom)
+            File.join(__dir__, '../../../..', 'views', 'components')
+          end
+
+          def render_header_scroll_to(pom, render:)
+            render.call :erb, :scroll_to_header, views: view_dir_script(pom)
           end
         end
 

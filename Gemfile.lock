@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    scroll_to_presenters_plugin (0.0.1)
+    scroll_to_presenter_plugin (0.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -14,7 +14,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   rake (~> 10.0)
-  scroll_to_presenters_plugin!
+  scroll_to_presenter_plugin!
 
 BUNDLED WITH
-   2.0.1
+   2.2.19

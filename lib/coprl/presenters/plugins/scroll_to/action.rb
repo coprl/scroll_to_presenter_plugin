@@ -1,6 +1,6 @@
-require 'voom/presenters/dsl/components/actions/base'
+require 'coprl/presenters/dsl/components/actions/base'
 
-module Voom
+module Coprl
   module Presenters
     module Plugins
       module ScrollTo
