@@ -19,12 +19,12 @@ module Coprl
 
         module WebClientComponents
 
-          def view_dir_script(pom)
+          def view_dir_scroll_to(pom)
             File.join(__dir__, '../../../..', 'views', 'components')
           end
 
           def render_header_scroll_to(pom, render:)
-            render.call :erb, :scroll_to_header, views: view_dir_script(pom)
+            render.call :erb, :scroll_to_header, views: view_dir_scroll_to(pom)
           end
         end
 
