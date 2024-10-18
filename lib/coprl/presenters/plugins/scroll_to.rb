@@ -7,8 +7,8 @@ module Coprl
 
         class Settings
           extend Dry::Configurable
-          setting :offset, 0
-          setting :smooth, true
+          setting :offset, default: 0
+          setting :smooth, default: true
         end
 
         module DSLEventActions
